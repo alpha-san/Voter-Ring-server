@@ -1,6 +1,6 @@
 import Server from 'socket.io';
 
-export default function startServer() {
+export default function startServer(store) {
 
     // create http server at port 8090
     const io = new Server().attach(8090);
